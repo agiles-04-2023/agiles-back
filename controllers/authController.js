@@ -5,8 +5,8 @@ const jwt = require('jsonwebtoken')
 const AppError = require('../helpers/AppError')
 
 const createToken = (user) => {
-  return jwt.sign(user, process.env.SECRET_TOKEN_MARANI_APP_2023, {
-    expiresIn: process.env.SECRET_TOKEN_MARANI_APP_2023_INSPIRE_IN
+  return jwt.sign(user, process.env.SECRET_TOKEN_2023, {
+    expiresIn: process.env.SECRET_TOKEN_INSPIRE_IN
   })
 }
 
