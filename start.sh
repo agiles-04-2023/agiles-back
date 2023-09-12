@@ -4,5 +4,5 @@ git pull origin main
 chmod +x ./start.sh
 npm i
 pm2 delete Agiles-Back
-pm2 start src/app.js --name Agiles-Back
+pm2 start src/server.js --name Agiles-Back
 pm2 ls
