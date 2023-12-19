@@ -1,5 +1,5 @@
 const { DataTypes } = require('sequelize')
-const { dbConnect } = require('./../db/index')
+const { dbConnect } = require('../db/index')
 const bcrypt = require('bcryptjs')
 const crypto = require('crypto')
 

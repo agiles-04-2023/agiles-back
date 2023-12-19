@@ -1,6 +1,6 @@
 const { promisify } = require('util')
 const catchAsync = require('../helpers/catchAsync')
-const User = require('./../schemas/user')
+const User = require('../schemas/user')
 const jwt = require('jsonwebtoken')
 const AppError = require('../helpers/AppError')
 
@@ -31,7 +31,7 @@ const createSendToken = async (user, statusCode, res) => {
 }
 
 exports.signUp = catchAsync(async (req, res, next) => {
-  // console.log(req.body)
+  console.log(req.body)
   // return
   const newUser = await User.create(req.body)
   createSendToken(newUser, 201, res)
